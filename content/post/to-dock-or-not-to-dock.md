@@ -1,6 +1,6 @@
 +++
 date = '2024-11-19T15:06:00+02:00'
-draft = true
+draft = false
 title = 'To Dock or Not to Dock'
 tags = ['docker', 'deployment', 'devops', 'digitalocean', 'heroku', 'aws', 'containers']
 +++
