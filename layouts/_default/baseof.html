@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    {{ partial "head.html" . }}
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
-  </head>
-  <body>
-    {{ block "main" . }}{{ end }}
-  </body>
+
+    {{- if site.Params.darkmode -}}
+    <body class="latex-dark">
+    {{- else if site.Params.lightmode -}}
+    <body>
+    {{- else -}}
+    <body class="latex-dark-auto">
+    {{- end -}}
+        {{- partial "header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
 </html>
