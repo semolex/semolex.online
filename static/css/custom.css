@@ -1,0 +1,41 @@
+:root {
+  --link-visited: #c0551b;
+  --link-focus-outline: #c0551b;
+  --body-color: hsl(0, 5%, 10%);
+  --body-bg-color: hsl(35, 51%, 93%);
+}
+
+/* Optional: override the rules themselves */
+a:visited {
+  color: var(--link-visited);
+}
+
+.latex-dark {
+  --body-color: hsl(0, 0%, 86%);
+  --body-bg-color: hsl(0, 0%, 16%);
+  --link-visited: hsl(32, 75%, 43%);
+  --link-focus-outline: hsla(32, 100%, 60%, 0.5);
+  --pre-bg-color: hsl(0, 1%, 25%);
+  --kbd-bg-color: hsl(0, 0%, 16%);
+  --kbd-border-color: hsl(210, 5%, 70%);
+  --table-border-color: white;
+  --sidenote-target-border-color: hsl(0, 0%, 59%);
+  --footnotes-border-color: hsl(0, 0%, 59%);
+  --proof-symbol-filter: invert(80%);
+}
+
+@media (prefers-color-scheme: dark) {
+   .latex-dark-auto {
+    --body-color: hsl(0, 0%, 86%);
+    --body-bg-color: hsl(0, 0%, 16%);
+    --link-visited: hsl(32, 75%, 43%);
+    --link-focus-outline: hsla(32, 100%, 60%, 0.5);
+    --pre-bg-color: hsl(0, 1%, 25%);
+    --kbd-bg-color: hsl(0, 0%, 16%);
+    --kbd-border-color: hsl(210, 5%, 70%);
+    --table-border-color: white;
+    --sidenote-target-border-color: hsl(0, 0%, 59%);
+    --footnotes-border-color: hsl(0, 0%, 59%);
+    --proof-symbol-filter: invert(80%);
+  }
+}
