@@ -1,0 +1,30 @@
+baseURL = 'https://semolex.online/'
+languageCode = 'en-us'
+title = 'semolex.online'
+enableEmoji = true
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+theme = "HugoTeX"
+
+[pagination]
+  pagerSize = 5
+
+[Params.Author]
+  name = "Oleksii Semeshchuk"
+  abstract = """
+  I'm a software engineer, musician and a an amateur astronomer.
+  All thought are opinionated.
+  """
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "paraiso-dark"
