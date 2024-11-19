@@ -13,7 +13,7 @@ theme = "HugoTeX"
 [Params.Author]
   name = "Oleksii Semeshchuk"
   abstract = """
-  I'm a software engineer, musician and a an amateur astronomer.
+  I'm a software engineer, musician and amateur astronomer.
   All thought are opinionated.
   """
 
