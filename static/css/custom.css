@@ -39,3 +39,14 @@ a:visited {
     --proof-symbol-filter: invert(80%);
   }
 }
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Optional: adds some spacing */
+}
+
+.logo {
+    max-width: 200px; /* Adjust based on your needs */
+    height: auto;
+}

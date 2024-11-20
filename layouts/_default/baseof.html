@@ -2,7 +2,12 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
-
+    <!-- Basic favicon -->
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicon-16x16.png">
     {{- if site.Params.darkmode -}}
     <body class="latex-dark">
     {{- else if site.Params.lightmode -}}
@@ -10,6 +15,9 @@
     {{- else -}}
     <body class="latex-dark-auto">
     {{- end -}}
+    <div class="logo-container">
+        <img src="{{ .Site.BaseURL }}img/logo_small.png" class="logo" alt="Site Logo">
+    </div>
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
