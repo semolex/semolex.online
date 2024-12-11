@@ -8,7 +8,10 @@ title = 'Script to Check Uncommited Repositories'
 This script checks all repositories in a directory for uncommitted changes. I noticed that I have a lot of repositories on my machine, and sometimes I forget to commit changes when experimenting with different environments. 
 
 This script helps me to check all repositories at once.
+<!--more-->
 
+
+## Script
 ```bash
 #!/bin/bash
 
