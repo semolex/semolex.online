@@ -7,8 +7,6 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 theme = "HugoTeX"
 
-[pagination]
-  pagerSize = 5
 
 [Params.Author]
   name = "Oleksii Semeshchuk"
@@ -30,6 +28,7 @@ theme = "HugoTeX"
     style = "paraiso-dark"
 
 [params]
+    paginate = 5
     description = "Personal blog of Oleksii Semeshchuk"
     keywords = "programming, music, astronomy, software engineering"
     author = "Oleksii Semeshchuk"
