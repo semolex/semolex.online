@@ -1,7 +1,8 @@
-from mypy.dmypy.client import do_stopfrom mypy.dmypy.client import do_run+++
++++
 date = '2025-01-08T16:46:06+02:00'
 draft = false
 title = 'Simple Pandas Optimizations: A Quick Guide'
+tags = ['pandas', 'optimization', 'data-science', 'python']
 +++
 
 ## Introduction
